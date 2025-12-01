@@ -1,0 +1,2 @@
+node ./foundryvtt/resources/app/main.js --dataPath='./FoundyData'
+
