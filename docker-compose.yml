@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  foundryvtt_12:
+    container_name: "foundryvtt_12"
+    image: node:20.19.6
+    restart: always
+    volumes:
+      - "./foundryvtt_12:/foundryvtt:cached"
+      - "./FoundyData_new:/foundrydata:cached"
+    ports:
+      - "30000:30000"
+    command: "node ./foundryvtt/resources/app/main.js --dataPath='./foundrydata'"
+
+
+
+
+
